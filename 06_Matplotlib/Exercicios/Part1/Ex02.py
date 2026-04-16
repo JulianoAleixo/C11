@@ -6,7 +6,7 @@ https://julianoaleixo.dev
 import numpy as np
 import matplotlib.pyplot as plt
 
-dataset = np.loadtxt('./Datasets/space.csv', delimiter=';', dtype=str, encoding='utf-8-sig')
+dataset = np.loadtxt('../Datasets/space.csv', delimiter=';', dtype=str, encoding='utf-8-sig')
 
 eua_companies = np.unique(dataset[np.char.find(dataset[1:, 2], 'USA')][:, 1])
 china_companies = np.unique(dataset[np.char.find(dataset[1:, 2], 'China')][:, 1])

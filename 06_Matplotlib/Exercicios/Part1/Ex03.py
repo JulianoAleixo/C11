@@ -6,7 +6,7 @@ https://julianoaleixo.dev
 import numpy as np
 import matplotlib.pyplot as plt
 
-dataset = np.loadtxt('./Datasets/space.csv', delimiter=';', dtype=str, encoding='utf-8-sig')
+dataset = np.loadtxt('../Datasets/space.csv', delimiter=';', dtype=str, encoding='utf-8-sig')
 
 df_roscosmos_missions = dataset[1:][np.char.equal(dataset[1:, 1], 'Roscosmos')]
 status = df_roscosmos_missions[:, 7]

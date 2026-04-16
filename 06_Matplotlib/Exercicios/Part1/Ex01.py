@@ -6,7 +6,7 @@ https://julianoaleixo.dev
 import numpy as np
 import matplotlib.pyplot as plt
 
-dataset = np.loadtxt('./Datasets/paises.csv', delimiter=';', dtype=str, encoding='utf-8-sig')
+dataset = np.loadtxt('../Datasets/paises.csv', delimiter=';', dtype=str, encoding='utf-8-sig')
 df_northern_america = dataset[1:][np.char.equal(dataset[1:, 1], 'NORTHERN AMERICA')]
 countries = df_northern_america[:, 0]
 
